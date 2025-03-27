@@ -1,4 +1,5 @@
-FROM almalinux:9
+ARG version
+FROM almalinux:${version}
 ARG author="venkata koti" \
     tool="docker" \
     description="this is docker practice"
