@@ -1,5 +1,6 @@
 ARG version
-FROM almalinux:${version}
+FROM almalinux:${version:-9}
+#here :-9 means we give to take default if any version not give then take 9
 ARG author="venkata koti" \
     tool="docker" \
     description="this is docker practice"
